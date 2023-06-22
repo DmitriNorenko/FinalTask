@@ -17,7 +17,7 @@ namespace FinalTask
             {
                 if (Directory.Exists("/Users/dima/Desktop/Students"))
                 {
-                    Console.WriteLine("Папка для студентов уже сущесвует.");
+                    Console.WriteLine("Папка для студентов уже существует.");
                     GetText();
                 }
                 else
@@ -25,6 +25,8 @@ namespace FinalTask
                     Directory.CreateDirectory("/Users/dima/Desktop/Students");
                     GetText();
                 }
+                Console.WriteLine("Файл в папке.");
+                Console.ReadKey();
             }
             catch (Exception ex)
             {
